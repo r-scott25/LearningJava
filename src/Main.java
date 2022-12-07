@@ -29,20 +29,20 @@ public class Main {
     //////////////////////////**** Challenge *****///////////////////////
     /////////////////     Function: Salary Calculator    ////////////////
 
-    public static double calculateSalary(double hrsPerWeek, double dollarsPerHour, int vacationDays) {
-        if (hrsPerWeek < 0){
-            return -1;
-        }
-        if (dollarsPerHour < 0){
-            return -1;
-        }
-            double weeklyIncome = hrsPerWeek * dollarsPerHour;
-            double unpaidTime = vacationDays * dollarsPerHour * 8;
-            double grossYearlySalary = (weeklyIncome * 52) - unpaidTime;
-            return grossYearlySalary;
-
-
-    }
+//    public static double calculateSalary(double hrsPerWeek, double dollarsPerHour, int vacationDays) {
+//        if (hrsPerWeek < 0){
+//            return -1;
+//        }
+//        if (dollarsPerHour < 0){
+//            return -1;
+//        }
+//            double weeklyIncome = hrsPerWeek * dollarsPerHour;
+//            double unpaidTime = vacationDays * dollarsPerHour * 8;
+//            double grossYearlySalary = (weeklyIncome * 52) - unpaidTime;
+//            return grossYearlySalary;
+//
+//
+//    }
 
     public static void main(String[] args) {
 
@@ -210,9 +210,38 @@ public class Main {
 //        System.out.println("The area is " + area);
 
 
+        //////////////////////////**** Triangle Instance *****///////////////////////
+        ///////////////////     Creating an Instance of a Class     /////////////////
+
+//        Triangle triangleA = new Triangle(15, 8, 15, 8, 17);
+//        Triangle triangleB = new Triangle(3, 2.598, 3, 3, 3);
+//
+//        //////////////   Calling an Instance Function on an Instance of the Class   /////////////////
+//        double triangleAArea = triangleA.findArea();
+//        System.out.println(triangleAArea);
+//
+//        double triangleBArea = triangleB.findArea();
+//        System.out.println(triangleBArea);
+//
+//        //////////////   Accessing an Instance's Attributes  /////////////////
+//
+//        System.out.println(triangleA.sideLenThree);
+//        System.out.println(triangleB.base);
+//
+//
+////        Use the Class Name to access static variables
+//        System.out.println(Triangle.numOFSides);
 
 
+        //////////////////////////**** Challenge *****///////////////////////
+        ///////////////////     Creating an Instance of Student Class     /////////////////
 
+        Student studentA = new Student("Rachel", "Scott", 2015, 4.0, "Education");
+        Student studentB = new Student("Adrian", "Bernal", 2024, 4.0, "Video Game Design");
 
+        System.out.println(studentA.major);
+        System.out.println(studentB.major);
+
+        System.out.println(studentA.incrementExpectedGradYear());
     }
 }
