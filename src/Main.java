@@ -2,7 +2,89 @@ import java.util.Locale;
 import java.util.Scanner;
 
 public class Main {
+
+    //////////////////////////**** Developer Tea Time *****///////////////////////
+    /////////////////////////     Defining a Function     ////////////////////////
+//    public static void announceDeveloperTeaTime() {
+//        System.out.println("Waiting for developer tea time...");
+//        System.out.println("Type in a random word and press Enter to start developer tea time");
+//        Scanner input = new Scanner(System.in);
+//        input.next();
+//        System.out.println("It's developer tea time!");
+//    }
+
+
+
+    //////////////////////////**** TOTAL MEAL PRICE *****///////////////////////
+    /////////////////     Defining a Function with Parameters    ///////////////
+
+//    public static double calculateTotalMealPrice(double listedMealPrice, double tipRate, double taxRate) {
+//        double tip = tipRate * listedMealPrice;
+//        double tax = taxRate * listedMealPrice;
+//        double result = listedMealPrice + tip + tax;
+//        return result;
+//    }
+
+
+    //////////////////////////**** Challenge *****///////////////////////
+    /////////////////     Function: Salary Calculator    ////////////////
+
+    public static double calculateSalary(double hrsPerWeek, double dollarsPerHour, int vacationDays) {
+        if (hrsPerWeek < 0){
+            return -1;
+        }
+        if (dollarsPerHour < 0){
+            return -1;
+        }
+            double weeklyIncome = hrsPerWeek * dollarsPerHour;
+            double unpaidTime = vacationDays * dollarsPerHour * 8;
+            double grossYearlySalary = (weeklyIncome * 52) - unpaidTime;
+            return grossYearlySalary;
+
+
+    }
+
     public static void main(String[] args) {
+
+        //////////////////////////**** Developer Tea Time *****///////////////////////
+        /////////////////////////     Calling a Function     ////////////////////////
+
+//        announceDeveloperTeaTime();
+
+
+        //////////////////////////**** Developer Tea Time *****///////////////////////
+        ///////////////////     Calling a Function w/ Parameters     ////////////////
+
+//        calculateTotalMealPrice(5.99, .20, .07);
+//        calculateTotalMealPrice(15, .30, .08);
+
+//       double groupTotalMealPrice = calculateTotalMealPrice(100, .2, .08);
+//       System.out.println(groupTotalMealPrice);
+//
+//       double individualTotalMealPrice = groupTotalMealPrice / 5;
+//       System.out.println(individualTotalMealPrice);
+
+
+        //////////////////////////**** Challenge *****///////////////////////
+        /////////////////     Call Function: Salary Calculator    ////////////////
+
+//       double employeeSalary =  calculateSalary(40, 30, 8);
+//       System.out.println(employeeSalary);
+
+
+
+
+
+
+
+    //////////////////////////**** Ex. Math.pow *****///////////////////////
+    //////////////////////////     Built-In Functions    ////////////////////////
+
+//   double result = Math.pow(2, 5);
+//   System.out.println(result);
+
+
+
 
         //////////////////////////**** STUDENT *****///////////////////////
         ////////////////////  Data Types and Variables  ///////////////////
@@ -126,6 +208,7 @@ public class Main {
 //
 //        double area = (base * height) / 2;
 //        System.out.println("The area is " + area);
+
 
 
 
